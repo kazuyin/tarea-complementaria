@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Obtener hora en tiempo real siempre con un click</h1>
+
+    <button onclick="hour()">Apreta para obtener la hora</button>
+    <p id="hora"></p>
+    <script type="text/javascript">
+        
+        function hour(){
+            
+           let hora= new Date()
+           let horasi = hora.getHours()
+            alert(horasi)
+            document.getElementById("hora").innerHTML='Son las '+ horasi +' horas'
+        }
+    </script>
+</body>
+</html>
