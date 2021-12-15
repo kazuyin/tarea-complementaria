@@ -16,8 +16,8 @@
         function hour(){
             
            let hora= new Date()
-           let horasi = hora.getHours()
-            alert(horasi)
+           let horasi = hora.getHours()+ ':' + hora.getMinutes() + ':' + hora.getSeconds();
+            
             document.getElementById("hora").innerHTML='Son las '+ horasi +' horas'
         }
     </script>
